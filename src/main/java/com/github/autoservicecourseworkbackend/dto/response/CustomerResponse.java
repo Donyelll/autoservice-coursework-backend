@@ -1,0 +1,21 @@
+package com.github.autoservicecourseworkbackend.dto.response;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import java.util.List;
+
+@Getter
+@Setter
+@Accessors(chain = true)
+public class CustomerResponse {
+
+    private Integer id;
+    private String name;
+    private String surname;
+    private String login;
+    private String password;
+    private List<OrderResponse> orders;
+
+}
